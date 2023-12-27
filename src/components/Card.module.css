@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
