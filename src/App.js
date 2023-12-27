@@ -1,10 +1,11 @@
 import "./App.css";
 import { Card } from "./components/Card";
+import { Typography } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Typography variant="h4">hello</Typography>
       <Card />
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "./Button";
+import { PlusMinus } from "./PlusMinus";
 import styles from "./Card.module.css";
 import { Input } from "./Input";
 
@@ -18,13 +18,13 @@ export const Card = () => {
     <>
       <div className={styles.container}>
         <div className={styles.card}>
-          <Button label="➖" onClick={handleMinus} />
+          <PlusMinus label="➖" onClick={handleMinus} />
           {count}
-          <Button label="➕" onClick={handlePlus} />
+          <PlusMinus label="➕" onClick={handlePlus} />
         </div>
         <div className={styles.input}>
-          <Input />
-          <Input />
+          <Input product="Product Name" />
+          <Input product="Price" />
         </div>
       </div>
     </>

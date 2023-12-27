@@ -1,10 +1,10 @@
 import styles from "./Input.module.css";
 
-export const Input = () => {
+export const Input = ({ product }) => {
   return (
-    <div className={styles.input}>
-      <label>Product Name</label>
-      <input placeholder="input" />
+    <div className={styles.container}>
+      <label>{product}</label>
+      <input className={styles.input} placeholder="input" />
     </div>
   );
 };
