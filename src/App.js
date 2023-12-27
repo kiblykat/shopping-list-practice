@@ -1,6 +1,6 @@
 import "./App.css";
 import { Card } from "./components/Card";
-import { Typography } from "@mui/material";
+import { Typography, makeStyles } from "@mui/material";
 
 function App() {
   return (
