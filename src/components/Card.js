@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { PlusMinus } from "./PlusMinus";
-import styles from "./Card.module.css";
 import { Input } from "./Input";
-import { Typography, makeStyles } from "@mui/material";
+import useStyles from "./CardStyles"; //using MUI
 
 export const Card = () => {
+  const classes = useStyles(); //using MUI
+
   const [count, setCount] = useState(0);
 
   const handleMinus = () => {
@@ -13,13 +14,13 @@ export const Card = () => {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.card}>
+      <div className={classes.container}>
+        <div className={classes.card}>
           <PlusMinus label="➖" onClick={handleMinus} />
           {count}
           <PlusMinus label="➕" onClick={() => setCount(count + 1)} />
         </div>
-        <div className={styles.input}>
+        <div className={classes.input}>
           <Input product="Product Name" />
           <Input product="Price" />
         </div>

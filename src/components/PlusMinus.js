@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.css";
+import styles from "./PlusMinus.module.css";
 import Button from "@mui/material/Button";
 
 export const PlusMinus = ({ label, onClick }) => {
